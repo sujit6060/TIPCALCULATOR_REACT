@@ -1,21 +1,19 @@
-import React from 'react'
+import React from "react";
+import { Container } from "react-bootstrap";
 
 function Footer() {
-    return (
-        <div>
-           
-<footer class="page-footer font-small" style={{backgroundColor:"black",color:"white"}}>
-
-  
-  <div class="footer-copyright text-center py-3">© 2021 Copyright:
-    <a href="#"> SujitTechnoo.com</a>
-  </div>
-  
-
-</footer>
-
+  return (
+    <footer
+      className="page-footer font-small text-white"
+      style={{ backgroundColor: "#212529" }}
+    >
+      <Container>
+        <div className="text-center py-3">
+          © {new Date().getFullYear()} Copyright All Rights Reserved
         </div>
-    )
+      </Container>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;
